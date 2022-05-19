@@ -19,7 +19,34 @@
           var s = document.getElementsByTagName('script')[0];
           s.parentNode.insertBefore(wzrk, s);
    })();
+function passon(){
+    var name = document.getElementById('name').value;
+    var username = document.getElementById('username').value;
+    var Email = document.getElementById('email').value;
+    var Phone = document.getElementById('Phone').value;
+    var Gender;
+    var Identity = document.getElementById('Identity').value;
+    var DOB = document.getElementById('DOB').value;
+  
+    clevertap.onUserLogin.push(
+    {
+    "Site": {
+    "Name": username,            // String
+    "Identity": Identity,              // String or number
+    "Email": Email,         // Email address of the user
+    "Phone": Phone,   // Phone (with the country code)
+    "Gender": "F",                     // Can be either M or F
+    "DOB": new Date(DOB),
+    "MSG-email": false,
+    "MSG-push": true,
+    "MSG-sms": true,
+    "MSG-whatsapp": true,
+    }
+    })
+}
+
  </script>
+ 
    </head>
 <body>
   <div class="container">
@@ -29,35 +56,35 @@
         <div class="user-details">
           <div class="input-box">
             <span class="details">Full Name</span>
-            <input type="text" placeholder="Enter your name" required>
+            <input type="text" placeholder="Enter your name" required id="name">
           </div>
           <div class="input-box">
             <span class="details">Username</span>
-            <input type="text" placeholder="Enter your username" required>
+            <input type="text" placeholder="Enter your username" required id="username">
           </div>
           <div class="input-box">
             <span class="details">Email</span>
-            <input type="text" placeholder="Enter your email" required>
+            <input type="text" placeholder="Enter your email" required id="email">
           </div>
           <div class="input-box">
             <span class="details">Phone Number</span>
-            <input type="text" placeholder="Enter your number" required>
+            <input type="text" placeholder="Enter your number" required id="phone">
           </div>
           <div class="input-box">
             <span class="details">Password</span>
-            <input type="password" placeholder="Enter your password" required>
+            <input type="password" placeholder="Enter your password" required id="password">
           </div>
           <div class="input-box">
             <span class="details">Confirm Password</span>
-            <input type="password" placeholder="Confirm your password" required>
+            <input type="password" placeholder="Confirm your password" required id="conpassword">
           </div>
           <div class="input-box">
             <span class="details">Favorite food</span>
-            <input type="text" placeholder="Enter your favorite food" required>
+            <input type="text" placeholder="Enter your favorite food" required id="food">
           </div>
           <div class="input-box">
             <span class="details">Favorite hotel</span>
-            <input type="text" placeholder="Enter your favorite hotel" required>
+            <input type="text" placeholder="Enter your favorite hotel" required id="hotel">
           </div>
         </div>
         <div class="gender-details">
@@ -92,6 +119,8 @@
       </form>
     </div>
   </div>
+
+  
 
 </body>
 </html>
