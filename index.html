@@ -92,24 +92,7 @@ function passon(){
         }
     });
 }
-    function eventfun(){
-        var event_name = document.getElementById('event_name').value;
-        var property = document.getElementById('property').value;
-        clevertap.event.push(event_name,
-    {
-        "property1": property,
-    });
-}
-    function notipermission(){
-        clevertap.notifications.push({
-        "apnsWebPushId": "<apple web push id>", //only for safari browser
-        "apnsWebPushServiceUrl": "<safari package service url>", //only for safari browser
-        "titleText":'Would you like to receive Push Notifications?',
-        "bodyText":'We promise to only send you relevant content and give you updates on your transactions',
-        "okButtonText":'Sign me up!',
-        "rejectButtonText":'No thanks',
-        "okButtonColor":'#F28046'
-    });
+
 }
 </script>
 </head>
