@@ -74,7 +74,7 @@ function passon(){
             "Identity": Identity, // String or number
             "Email": Email, // Email address of the user
             "Phone": Phone, // Phone (with the country code)
-            "Gender": "M", // Can be either M or F
+            "Gender": "F", // Can be either M or F
             "DOB": new Date(DOB),
             "MSG-email": false,
             "MSG-push": true,
@@ -127,29 +127,28 @@ function passon(){
         <div class="form-group">
                 <input type="text" class="form-control" id="Identity" placeholder="Enter User ID">
             </div>
-        <div class="form-group">
+       
             <input type="text" class="form-control" placeholder="Username" id="username">
-        </div>
-        <div class="form-group">
+        
+     
             <input type="password" class="form-control" placeholder="Password">
-        </div>
-        <div class="form-group">
+       
+ 
             <input type="email" class="form-control" placeholder="email" id="Email">
-        </div>
-        <div class="form-group">
+        
+   
             <input type="tel" class="form-control" placeholder="Phone Number" id="Phone">
-        </div>
-          <div class="form-group">
+       
+          
             <input type="text" class="form-control" placeholder="new_one" id="event_name">
-        </div>
-          <div class="form-group">
+        
+          
             <input type="text" class="form-control" placeholder="property" id="property">
-        </div>
-        <div class="form-group">
+   
             <label for="DOB">Date of Birth</label>
             <input type="text" class="form-control" id="DOB" placeholder="Month Date, Year 00:00:00">
-        </div>
-        <div class="form-group">
+        
+       
             <label>Select Gender</label><br>
             <input type="radio" id="male" name="gender" value="male">
             <label for="male">Male</label><br>
@@ -157,16 +156,15 @@ function passon(){
             <label for="female">Female</label><br>
             <input type="radio" id="other" name="gender" value="other">
             <label for="other">Other</label>
-        </div>
-        <div class="form-group">
+        
+        
                 <button type="submit" class="btn btn-primary btn-block" onclick="passon()">Log in</button>
-            </div>
-        <div class="form-group">
+          
+        
             <button type="submit" class="btn btn-primary btn-block" onclick="eventfun()">Event</button>
-        </div>
-        <div class="form-group">
+     
             <button type="submit" class="btn btn-primary btn-block" onclick="notipermission">Notification permission</button>
-        </div>
+        
         <div class="clearfix">
             <label class="float-left form-check-label"><input type="checkbox"> Remember me</label>
             <a href="#" class="float-right">Forgot Password?</a>
