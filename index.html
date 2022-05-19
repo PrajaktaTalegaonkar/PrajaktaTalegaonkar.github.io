@@ -25,7 +25,7 @@ function passon(){
     var Email = document.getElementById('email').value;
     var Phone = document.getElementById('Phone').value;
     var Gender;
-    var Identity = document.getElementById('Identity').value;
+    var Identity = document.getElementById('name').value;
     var DOB = document.getElementById('DOB').value;
   
     clevertap.onUserLogin.push(
@@ -68,19 +68,23 @@ function passon(){
           </div>
           <div class="input-box">
             <span class="details">Phone Number</span>
-            <input type="text" placeholder="Enter your number" required id="phone">
+            <input type="text" placeholder="Enter your number" required id="Phone">
           </div>
           <div class="input-box">
             <span class="details">Password</span>
-            <input type="password" placeholder="Enter your password" required id="password">
+            <input type="password" placeholder="Enter your password" id="password">
           </div>
           <div class="input-box">
             <span class="details">Confirm Password</span>
-            <input type="password" placeholder="Confirm your password" required id="conpassword">
+            <input type="password" placeholder="Confirm your password" id="conpassword">
           </div>
+          <div class="form-group">
+            <label for="DOB">Date of Birth</label>
+            <input type="text" class="form-control" id="DOB" placeholder="Month Date, Year 00:00:00">
+        </div>
           <div class="input-box">
             <span class="details">Favorite food</span>
-            <input type="text" placeholder="Enter your favorite food" required id="food">
+            <input type="text" placeholder="Enter your favorite food" id="food">
           </div>
           <div class="input-box">
             <span class="details">Favorite hotel</span>
